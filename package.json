@@ -1,0 +1,30 @@
+{
+  "name": "anv",
+  "version": "1.0.0",
+  "description": "aninvoice backend in typescript",
+  "main": "app.js",
+  "scripts": {
+    "build": "tsc",
+    "1audit:start": "node ./dist/app.js",
+    "1audit:dev": "nodemon ./src/app.ts",
+    "1audit:debug": "nodemon --inspect=5858 -e ts,tsx --exec node -r ts-node/register ./src/app.ts",
+    "test": "jest -i"
+  },
+  "keywords": [
+    "1Audit"
+  ],
+  "author": "surojit",
+  "license": "ISC",
+  "dependencies": {
+    "mysql2": "^2.3.3",
+    "nodemon": "^2.0.20",
+    "reflect-metadata": "^0.1.13",
+    "sequelize": "^6.28.0",
+    "sequelize-typescript": "^2.1.5"
+  },
+  "devDependencies": {
+    "@types/validator": "^13.7.10",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  }
+}
